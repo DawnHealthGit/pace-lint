@@ -1,0 +1,184 @@
+only_rules:
+    # Default rules
+    - block_based_kvo
+    - class_delegate_protocol
+    - closing_brace
+    - closure_parameter_position
+    - colon
+    # Check if this works with trailing comma from style guide
+    - comma
+    - comma_inheritance
+    - comment_spacing
+    - compiler_protocol_init
+    - computed_accessors_order
+    - control_statement
+    - cyclomatic_complexity
+    - deployment_target
+    - discouraged_direct_init
+    - duplicate_enum_cases
+    - duplicate_imports
+    - duplicated_key_in_dictionary_literal
+    - dynamic_inline
+    - empty_enum_arguments
+    - empty_parameters
+    - empty_parentheses_with_trailing_closure
+    # - file_length
+    - for_where
+    # - force_cast
+    # - force_try
+    # - function_body_length
+    - function_parameter_count
+    - generic_type_name
+    - identifier_name # Can be configures
+    - implicit_getter
+    - inclusive_language
+    - inert_defer
+    - is_disjoint
+    - large_tuple
+    - leading_whitespace
+    - legacy_cggeometry_functions
+    - legacy_constant
+    - legacy_constructor
+    - legacy_hashing
+    - legacy_nsgeometry_functions
+    - legacy_random
+#Configure to 150 chars
+
+    # - line_length
+    - mark
+    - multiple_closures_with_trailing_closure
+    - nesting
+    # - no_fallthrough_only
+    - no_space_in_method_call
+    - notification_center_detachment
+    - nsobject_prefer_isequal
+    - opening_brace
+    - operator_whitespace
+    - orphaned_doc_comment
+    # - private_over_fileprivate
+    - private_unit_test
+    - protocol_property_accessors_order
+    - reduce_boolean
+    - redundant_discardable_let
+    - redundant_objc_attribute
+    - redundant_optional_initialization
+    - redundant_set_access_control
+    # - redundant_string_enum_value
+    - redundant_void_return
+    - return_arrow_whitespace
+    - self_in_property_initialization
+    - shorthand_operator
+    - statement_position
+    - superfluous_disable_command
+    - switch_case_alignment
+    - syntactic_sugar
+    - todo
+    - trailing_comma #Does this work with trailing comma, in a vertical list?
+    - trailing_newline
+    - trailing_semicolon
+    # Handled by swift-format - trailing_whitespace
+    # - type_name
+    - unavailable_condition
+    - unneeded_break_in_switch
+    - unused_capture_list
+    - unused_closure_parameter
+    - unused_control_flow_label
+    - unused_enumerated
+    - unused_optional_binding
+    - unused_setter_value
+    - valid_ibinspectable
+    - vertical_parameter_alignment
+    - vertical_whitespace
+    - void_return
+    - xctfail_message
+
+    # Opt-in rules
+    - accessibility_label_for_image
+    - anonymous_argument_in_multiline_closure # Use named arguments in multiline closures
+    - array_init # Prefer using Array(seq) over seq.map { $0 } to convert a sequence into an Array.
+    - capture_variable # Non-constant variables should not be listed in a closure’s capture list to avoid confusion about closures capturing variables at creation time.
+    - closure_end_indentation # Closure end should have the same indentation as the line that started it.
+    - closure_spacing # Closure expressions should have a single space inside each brace.
+    - collection_alignment # All elements in a collection literal should be vertically aligned
+    - contains_over_filter_count # Prefer contains over comparing filter(where:).count to 0.
+    - contains_over_filter_is_empty # Prefer contains over using filter(where:).isEmpty
+    - contains_over_first_not_nil # Prefer contains over first(where:) != nil and firstIndex(where:) != nil.
+    - contains_over_range_nil_comparison # Prefer contains over range(of:) != nil and range(of:) == nil.
+    # - convenience_type # Types used for hosting only static members should be implemented as a caseless enum to avoid instantiation.
+    - discouraged_assert # Prefer assertionFailure() and/or preconditionFailure() over assert(false)
+    - discouraged_none_name # Discourages name cases/static members none, which can conflict with Optional<T>.none
+    - discouraged_object_literal # Prefer initializers over object literals.
+    - empty_collection_literal # Prefer checking isEmpty over comparing collection to an empty array or dictionary literal.
+    - empty_count # Prefer checking isEmpty over comparing count to zero.
+    - empty_string # Prefer checking isEmpty over comparing string to an empty string literal.
+    - explicit_init # Explicitly calling .init() should be avoided.
+    - fallthrough # Fallthrough should be avoided.
+    - fatal_error_message # A fatalError call should have a message.
+    - file_name_no_space # File name should not contain any whitespace.
+    - first_where # Prefer using .first(where:) over .filter { }.first in collections.
+    - flatmap_over_map_reduce # Prefer flatMap over map followed by reduce([], +).
+    # - force_unwrapping # Force unwrapping should be avoided.
+    - function_default_parameter_at_end # Prefer to locate parameters with defaults toward the end of the parameter list.
+    - identical_operands # Comparing two identical operands is likely a mistake.
+    # - implicit_return # Prefer implicit returns in closures, functions and getters.
+    - implicitly_unwrapped_optional # Implicitly unwrapped optionals should be avoided when possible.
+    # Test with line wrapping
+    # - indentation_width # Indent code using either one tab or the configured amount of spaces, unindent to match previous indentations. Don’t indent the first line.
+    - joined_default_parameter # Discouraged explicit usage of the default separator.
+    - last_where # Prefer using .last(where:) over .filter { }.last in collections.
+    - legacy_multiple # Prefer using the isMultiple(of:) function instead of using the remainder operator (%).
+    - legacy_objc_type # Prefer Swift value types to bridged Objective-C reference types
+    - literal_expression_end_indentation # Array and dictionary literal end should have the same indentation as the line that started it.
+    # - missing_docs # Declarations should be documented.
+    - modifier_order # Modifier order should be consistent.
+    - multiline_arguments # Arguments should be either on the same line, or one per line.
+    # - multiline_arguments_brackets # Multiline arguments should have their surrounding brackets in a new line.
+    # - multiline_function_chains # Chained function calls should be either on the same line, or one per line.
+    # Handled by swift-format - multiline_literal_brackets # Multiline literals should have their surrounding brackets in a new line.
+    - multiline_parameters # Functions and methods parameters should be either on the same line, or one per line.
+    - multiline_parameters_brackets # Multiline parameters should have their surrounding brackets in a new line.
+    - no_extension_access_modifier # Prefer not to use extension access modifiers
+    - number_separator # Underscores should be used as thousand separator in large decimal numbers.
+    - operator_usage_whitespace # Operators should be surrounded by a single whitespace when they are being used.
+    - optional_enum_case_matching # Matching an enum case against an optional enum without ‘?’ is supported on Swift 5.1 and above.
+    - overridden_super_call # Some overridden methods should always call super
+    - override_in_extension # Extensions shouldn’t override declarations.
+    - prefer_self_in_static_references # Static references should be prefixed by Self instead of the class name.
+    - prefer_self_type_over_type_of_self # Prefer Self over type(of: self) when accessing properties or calling methods.
+    - prefer_zero_over_explicit_init # Prefer .zero over explicit init with zero parameters (e.g. CGPoint(x: 0, y: 0))
+    - prohibited_interface_builder # Creating views using Interface Builder should be avoided.
+    - prohibited_super_call # Some methods should not call super
+    - reduce_into # Prefer reduce(into:_:) over reduce(_:_:) for copy-on-write types
+    - redundant_nil_coalescing # nil coalescing operator is only evaluated if the lhs is nil, coalescing operator with nil as rhs is redundant
+    # - redundant_type_annotation # Variables should not have redundant type annotation
+    - single_test_class # Test files should contain a single QuickSpec or XCTestCase class.
+    - sorted_first_last # Prefer using min() or max() over sorted().first or sorted().last
+    # Handled by swift-format - sorted_imports # Imports should be sorted.
+    - static_operator # Operators should be declared as static functions, not free functions.
+    # - switch_case_on_newline # Cases inside a switch should always be on a newline
+    - toggle_bool # Prefer someBool.toggle() over someBool = !someBool.
+    - trailing_closure # Trailing closure syntax should be used whenever possible.
+    # - type_contents_order # Specifies the order of subtypes, properties, methods & more within a type.
+    - typesafe_array_init # Prefer using Array(seq) over seq.map { $0 } to convert a sequence into an Array.
+    - unneeded_parentheses_in_closure_argument # Parentheses are not needed when declaring closure arguments.
+    - unowned_variable_capture # Prefer capturing references as weak to avoid potential crashes.
+    - untyped_error_in_catch # Catch statements should not declare error variables without type casting.
+    - unused_import # All imported modules should be required to make the file compile.
+    - vertical_parameter_alignment_on_call # Function parameters should be aligned vertically if they’re in multiple lines in a method call.
+    # - vertical_whitespace_closing_braces # Don’t include vertical whitespace (empty line) before closing braces.
+    - xct_specific_matcher # Prefer specific XCTest matchers over XCTAssertEqual and XCTAssertNotEqual
+    - yoda_condition # The variable should be placed on the left, the constant on the right of a comparison operator.
+
+
+# line_length:
+#     warning: 150 # warning
+#     error: 200 # error
+#     ignores_comments: true
+#     ignores_interpolated_strings: true
+
+overridden_super_call:
+    excluded: "**/.*Tests\\.swift" # TODO
+
+# Enforce trailing commas on multiline collection literals
+trailing_comma:
+    mandatory_comma: true
