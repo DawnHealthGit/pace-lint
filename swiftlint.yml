@@ -60,7 +60,7 @@ opt_in_rules:
     - number_separator # Underscores should be used as thousand separator in large decimal numbers.
     - operator_usage_whitespace # Operators should be surrounded by a single whitespace when they are being used.
     - optional_enum_case_matching # Matching an enum case against an optional enum without ‘?’ is supported on Swift 5.1 and above.
-    - overridden_super_call # Some overridden methods should always call super
+    # - overridden_super_call # Some overridden methods should always call super # Disable this because we can't exclude it for test files only :-( Lots of swift-lint issues related to exclude pattern matching not working, like this one: https://github.com/realm/SwiftLint/issues/2329 
     - override_in_extension # Extensions shouldn’t override declarations.
     - prefer_self_in_static_references # Static references should be prefixed by Self instead of the class name.
     - prefer_self_type_over_type_of_self # Prefer Self over type(of: self) when accessing properties or calling methods.
