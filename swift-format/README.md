@@ -18,6 +18,10 @@ If you just want to try out swift-format on a single file, use:
 
 `swift-format --configuration ~/swift-format-pace.config -i path/to/myfile.swift`
 
+To try swift-format on an entire directory (careful with this!), use:
+
+`swift-format --configuration ~/swift-format-pace.config -i -r path/to/dir`
+
 ## Details
 
 Install/update the swift-format tool:
