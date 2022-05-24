@@ -132,8 +132,8 @@ only_rules:
     # - multiline_arguments_brackets # Multiline arguments should have their surrounding brackets in a new line.
     # - multiline_function_chains # Chained function calls should be either on the same line, or one per line.
     # Handled by swift-format - multiline_literal_brackets # Multiline literals should have their surrounding brackets in a new line.
-    - multiline_parameters # Functions and methods parameters should be either on the same line, or one per line.
-    - multiline_parameters_brackets # Multiline parameters should have their surrounding brackets in a new line.
+    # - multiline_parameters # Functions and methods parameters should be either on the same line, or one per line.
+    # - multiline_parameters_brackets # Multiline parameters should have their surrounding brackets in a new line.
     - no_extension_access_modifier # Prefer not to use extension access modifiers
     - number_separator # Underscores should be used as thousand separator in large decimal numbers.
     - operator_usage_whitespace # Operators should be surrounded by a single whitespace when they are being used.
