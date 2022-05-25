@@ -19,7 +19,7 @@ fi
 
 # Now copy the config to home directory
 
-echo "Installing pace swift-format config in ~/swift-format-pace.config"
+echo "Installing pace swiftformat config in ~/swiftformat-pace.config"
 
-cp -f ./swift-format-pace.config ~/
+cp -f ./swiftformat-pace.config ~/
 

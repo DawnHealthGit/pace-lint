@@ -1,6 +1,6 @@
 #!/bin/sh
 
-./install-swift-format.sh
+./install-formatter.sh
 
 ./update-configuration.sh
 

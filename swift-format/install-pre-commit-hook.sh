@@ -24,6 +24,9 @@ if ! [ -d "$1/.git" ]; then
   exit 1
 fi
 
+echo "Making sure git-format-staged is installed"
+npm install --global git-format-staged
+
 echo "Installing/updating pre-commit hook into $1/.git/hooks/pre-commit"
 
 cp -f ./pre-commit "$1/.git/hooks/pre-commit"
