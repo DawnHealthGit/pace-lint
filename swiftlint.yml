@@ -40,7 +40,7 @@ opt_in_rules:
     - function_default_parameter_at_end # Prefer to locate parameters with defaults toward the end of the parameter list.
     - identical_operands # Comparing two identical operands is likely a mistake.
     # - implicit_return # Prefer implicit returns in closures, functions and getters.
-    - implicitly_unwrapped_optional # Implicitly unwrapped optionals should be avoided when possible.
+    # - implicitly_unwrapped_optional # Implicitly unwrapped optionals should be avoided when possible.
     # Test with line wrapping
     # - indentation_width # Indent code using either one tab or the configured amount of spaces, unindent to match previous indentations. Don’t indent the first line.
     - joined_default_parameter # Discouraged explicit usage of the default separator.
