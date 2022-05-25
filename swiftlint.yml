@@ -96,8 +96,8 @@ force_cast: warning # implicitly
 #     ignores_comments: true
 #     ignores_interpolated_strings: true
 
-overridden_super_call:
-    excluded: "**/.*Tests\\.swift" # TODO
+#overridden_super_call:
+#    excluded: "**/.*Tests\\.swift" # TODO: # This exclusion doesn't work :-( Lots of swift-lint issues related to exclude pattern matching not working, like this one: https://github.com/realm/SwiftLint/issues/2329 
 
 # Enforce trailing commas on multiline collection literals
 trailing_comma:
