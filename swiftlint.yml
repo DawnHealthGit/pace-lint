@@ -106,4 +106,4 @@ trailing_comma:
 
 # Exclude certain directories from linting
 excluded:
-   - .build
+- .build
