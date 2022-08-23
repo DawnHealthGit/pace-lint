@@ -102,3 +102,8 @@ force_cast: warning # implicitly
 # Enforce trailing commas on multiline collection literals
 trailing_comma:
     mandatory_comma: true
+
+
+# Exclude certain directories from linting
+excluded:
+   - .build
