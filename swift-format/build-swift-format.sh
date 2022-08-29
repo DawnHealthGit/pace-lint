@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Set the -e flag to stop running the script in case a command returns
+# a nonzero exit code.
+set -e
+
 #
 # This script might not actually be useful, but in case we want to manually
 # compile swift-format at some point, instead of using Homebrew, it might
