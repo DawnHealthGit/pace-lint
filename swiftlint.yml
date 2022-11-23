@@ -1,9 +1,10 @@
 disabled_rules:
-#    - file_length
+    - file_length
+    - type_body_length
+#    - function_body_length
 #    - force_cast
     - force_try
-#    - function_body_length
-    - line_length
+#    - line_length  # Handled by swift-format
 #    - no_fallthrough_only
 #    - private_over_fileprivate
     - redundant_string_enum_value
