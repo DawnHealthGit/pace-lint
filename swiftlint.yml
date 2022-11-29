@@ -1,16 +1,16 @@
 disabled_rules:
     - file_length
     - type_body_length
+    - force_try # disabled because we can't exclude it for tests-only :(
+    - redundant_string_enum_value
+    - type_name
+    - line_length  # Handled by swift-format
+    - trailing_whitespace # Handled by swift-format
+    - opening_brace # handled by swift-format
 #    - function_body_length
 #    - force_cast
-    - force_try
-    - line_length  # Handled by swift-format
 #    - no_fallthrough_only
 #    - private_over_fileprivate
-    - redundant_string_enum_value
-    - trailing_whitespace # Handled by swift-format
-    - type_name
-    - opening_brace # handled by swift-format
 
     # Opt-in rules
 opt_in_rules:
