@@ -17,7 +17,6 @@ opt_in_rules:
     - accessibility_label_for_image
     - anonymous_argument_in_multiline_closure # Use named arguments in multiline closures
     - array_init # Prefer using Array(seq) over seq.map { $0 } to convert a sequence into an Array.
-    - capture_variable # Non-constant variables should not be listed in a closure’s capture list to avoid confusion about closures capturing variables at creation time.
     - closure_end_indentation # Closure end should have the same indentation as the line that started it.
     - closure_spacing # Closure expressions should have a single space inside each brace.
     - collection_alignment # All elements in a collection literal should be vertically aligned
@@ -80,17 +79,20 @@ opt_in_rules:
     - toggle_bool # Prefer someBool.toggle() over someBool = !someBool.
     - trailing_closure # Trailing closure syntax should be used whenever possible.
     # - type_contents_order # Specifies the order of subtypes, properties, methods & more within a type.
-    - typesafe_array_init # Prefer using Array(seq) over seq.map { $0 } to convert a sequence into an Array.
     - unneeded_parentheses_in_closure_argument # Parentheses are not needed when declaring closure arguments.
     - unowned_variable_capture # Prefer capturing references as weak to avoid potential crashes.
     - untyped_error_in_catch # Catch statements should not declare error variables without type casting.
-    - unused_import # All imported modules should be required to make the file compile.
     - vertical_parameter_alignment_on_call # Function parameters should be aligned vertically if they’re in multiple lines in a method call.
     # - vertical_whitespace_closing_braces # Don’t include vertical whitespace (empty line) before closing braces.
     - xct_specific_matcher # Prefer specific XCTest matchers over XCTAssertEqual and XCTAssertNotEqual
     - yoda_condition # The variable should be placed on the left, the constant on the right of a comparison operator.
 
 force_cast: warning # implicitly
+
+analyzer_rules:
+    - capture_variable # Non-constant variables should not be listed in a closure’s capture list to avoid confusion about closures capturing variables at creation time.
+    - typesafe_array_init # Prefer using Array(seq) over seq.map { $0 } to convert a sequence into an Array.
+    - unused_import # All imported modules should be required to make the file compile.    
 
 # line_length:
 #     warning: 150 # warning
