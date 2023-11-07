@@ -15,7 +15,7 @@ disabled_rules:
 
     # Opt-in rules
 opt_in_rules:
-    - accessibility_label_for_image
+    # - accessibility_label_for_image
     - anonymous_argument_in_multiline_closure # Use named arguments in multiline closures
     - array_init # Prefer using Array(seq) over seq.map { $0 } to convert a sequence into an Array.
     - closure_end_indentation # Closure end should have the same indentation as the line that started it.
