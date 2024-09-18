@@ -3,7 +3,6 @@ disabled_rules:
     - type_body_length
     - force_try # disabled because we can't exclude it for tests-only :(
     - redundant_string_enum_value
-    - type_name
     - line_length  # Handled by swift-format
     - trailing_whitespace # Handled by swift-format
     - opening_brace # handled by swift-format
