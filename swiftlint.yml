@@ -106,6 +106,10 @@ analyzer_rules:
 trailing_comma:
     mandatory_comma: true
 
+type_name:
+  max_length:
+    warning: 60
+    error: 100
 
 # Exclude certain directories from linting
 excluded:
